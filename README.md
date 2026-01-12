@@ -12,6 +12,18 @@ MusicThali is a feature-rich music streaming application built with **React Nati
 -   **Modern UI**: Sleek and responsive design using `react-native-svg` and custom components.
 -   **State Management**: Efficient state handling with **Zustand**.
 
+## 📸 Screenshots
+
+View the app output and screenshots here: [Project Screenshots](https://drive.google.com/drive/folders/1s2Fw7_4ywvC1tA3v6l2Y14H9jMJuxlNe?usp=sharing)
+
+## 📱 Download App (APK)
+
+You can download the latest Android APK from the link below:
+
+👉 **[Download MusicThali APK](https://expo.dev/accounts/pradeepmaddineni27/projects/MusicThali/builds/f44433ce-7974-482e-b8c5-7668fd0af0fa)**
+
+*Click the link to download directly or view the QR code to scan with your device.*
+
 ## 🛠 Tech Stack
 
 -   **Framework**: [React Native](https://reactnative.dev/) (via [Expo](https://expo.dev/))
