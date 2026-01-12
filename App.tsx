@@ -1,20 +1,21 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-
+import React, { useEffect } from 'react';
+import { LogBox } from 'react-native';
+import RootStack from './src/navigation/RootStack';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+LogBox.ignoreLogs(['Possible Unhandled Promise Rejection']);
+import { useThemeStore } from './src/store/useThemeStore';
+import { usePlayerStore } from './src/store/usePlayerStore';
 export default function App() {
+  useEffect(() => {
+    useThemeStore.getState().hydrate();
+    usePlayerStore.getState().hydrate();
+    usePlayerStore.getState().init();
+    const { useDownloadStore } = require('./src/store/useDownloadStore');
+    useDownloadStore.getState().hydrate();
+  }, []);
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaProvider>
+      <RootStack />
+    </SafeAreaProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
