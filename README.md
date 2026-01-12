@@ -23,6 +23,8 @@ You can download the latest Android APK from the link below:
 👉 **[Download MusicThali APK](https://expo.dev/accounts/pradeepmaddineni27/projects/MusicThali/builds/f44433ce-7974-482e-b8c5-7668fd0af0fa)**
 
 *Click the link to download directly or view the QR code to scan with your device.*
+<img width="308" height="305" alt="Screenshot 2026-01-12 at 7 14 35 PM" src="https://github.com/user-attachments/assets/f86078da-2be9-4db0-b5aa-c164c604206f" />
+
 
 ## 🛠 Tech Stack
 
